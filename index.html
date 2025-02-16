@@ -8,53 +8,42 @@
 </head>
 <body>
 
-    <!-- लोगो अपलोड -->
+    <!-- HEADER SECTION -->
     <header>
-        <img src="logo.png" alt="श्री महालक्ष्मी धमाका 2025" id="logo">
-        <h1>श्री महालक्ष्मी धमाका 2025</h1>
+        <h1>🚀 श्री महालक्ष्मी धमाका 2025 🚀</h1>
+        <p>22,000 बक्षिसांसह शानदार संधी!</p>
     </header>
 
-    <!-- नोंदणी फॉर्म -->
-    <section id="register">
-        <h2>🔔 नोंदणी करा आणि बक्षिसे जिंका! 🔔</h2>
-        <form action="submit.php" method="post" enctype="multipart/form-data">
-            <label>पूर्ण नाव:</label>
-            <input type="text" name="name" required>
+    <!-- PAYMENT SECTION -->
+    <section class="payment">
+        <h2>💰 पेमेंट माहिती</h2>
+        <p>PhonePe UPI: <strong>amkarmakarand1@axl</strong></p>
+        <p>Google Pay UPI: <strong>amkarmaku-2@oksbi</strong></p>
+        <button onclick="alert('पेमेंट करा!')">💳 पेमेंट करा</button>
+    </section>
 
-            <label>मोबाईल नंबर:</label>
-            <input type="tel" name="mobile" required>
-
-            <label>पत्ता:</label>
-            <textarea name="address" required></textarea>
-
-            <label>ई-मेल:</label>
-            <input type="email" name="email">
-
-            <label>कुपन नंबर:</label>
-            <input type="text" name="coupon_number" required>
-
-            <label>पेमेंट स्क्रीनशॉट:</label>
-            <input type="file" name="screenshot" required>
-
-            <button type="submit">नोंदणी करा</button>
+    <!-- REGISTRATION FORM -->
+    <section class="form-section">
+        <h2>📜 नोंदणी करा</h2>
+        <form id="registrationForm">
+            <input type="text" id="name" placeholder="तुमचे संपूर्ण नाव" required>
+            <input type="text" id="address" placeholder="तुमचा पत्ता" required>
+            <input type="tel" id="phone" placeholder="मोबाईल नंबर" required>
+            <input type="email" id="email" placeholder="ई-मेल" required>
+            <input type="text" id="coupon" placeholder="कुपन नंबर" required>
+            <textarea id="questions" placeholder="तुमचे प्रश्न"></textarea>
+            <input type="file" id="screenshot" accept="image/*">
+            <button type="submit">✅ सबमिट करा</button>
         </form>
     </section>
 
-    <!-- पेमेंट लिंक -->
-    <section id="payment">
-        <h2>💰 पेमेंट करा</h2>
-        <p>तुम्ही ₹1001 कुपन खरेदीसाठी खालील UPI वापरू शकता:</p>
-        <a href="upi://pay?pa=amkarmakarand1@axl&pn=Makarand Amkar&mc=0000&tid=1234567890&tr=1234567890&tn=Payment for Coupon&am=1001&cu=INR" class="pay-btn">📲 PhonePe UPI</a>
-        <a href="upi://pay?pa=amkarmaku-2@oksbi&pn=Makarand Amkar&mc=0000&tid=1234567890&tr=1234567890&tn=Payment for Coupon&am=1001&cu=INR" class="pay-btn">💳 Google Pay UPI</a>
-    </section>
-
-    <!-- सोशल मीडिया -->
-    <section id="social">
-        <h2>📲 आमच्याशी संपर्क साधा</h2>
-        <a href="https://whatsapp.com/channel/0029Vb4ADG9Fi8xmVJOzWD20">📩 WhatsApp</a>
-        <a href="https://www.instagram.com/shree_mahalaxmi_dhamaka2025">📸 Instagram</a>
-        <a href="https://youtube.com/@shreemahalaxmidhamaka2025">🎥 YouTube</a>
-        <a href="https://www.facebook.com/share/1D9fF7wV3h/">📘 Facebook</a>
+    <!-- SOCIAL MEDIA LINKS -->
+    <section class="social">
+        <h2>📲 आमच्याशी कनेक्ट व्हा</h2>
+        <a href="https://whatsapp.com/channel/0029Vb4ADG9Fi8xmVJOzWD20" target="_blank">WhatsApp</a>
+        <a href="https://www.instagram.com/shree_mahalaxmi_dhamaka2025" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/share/1D9fF7wV3h/" target="_blank">Facebook</a>
+        <a href="https://youtube.com/@shreemahalaxmidhamaka2025" target="_blank">YouTube</a>
     </section>
 
     <script src="script.js"></script>
