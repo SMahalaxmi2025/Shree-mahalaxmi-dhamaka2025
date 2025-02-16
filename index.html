@@ -1,122 +1,62 @@
- HTML  (index.html)
-
-
-
-<!DOCTYPE html><html lang="mr">
+<!DOCTYPE html>
+<html lang="mr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>श्री महालक्ष्मी धमाका 2025</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body><header>
-    <h1>श्री महालक्ष्मी धमाका 2025</h1>
-    <p>₹1001 मध्ये भाग घ्या आणि महिंद्रा स्कॉर्पिओ जिंका!</p>
-    
-    <div class="social-buttons">
-        <a href="https://wa.me/8888546042" class="whatsapp">WhatsApp</a>
-        <a href="https://instagram.com/" class="instagram">Instagram</a>
-        <a href="https://facebook.com/" class="facebook">Facebook</a>
-        <a href="https://youtube.com/" class="youtube">YouTube</a>
-        <a href="https://t.me/" class="telegram">Telegram</a>
-    </div>
+<body>
 
-    <a href="#payment" class="btn">पेमेंट करा</a>
-    <a href="#register" class="btn">नोंदणी करा</a>
-    <a href="#details" class="btn">Details</a>
-    <a href="tel:8888546042" class="btn">Call Now</a>
-</header>
+    <!-- लोगो अपलोड -->
+    <header>
+        <img src="logo.png" alt="श्री महालक्ष्मी धमाका 2025" id="logo">
+        <h1>श्री महालक्ष्मी धमाका 2025</h1>
+    </header>
 
-<section id="payment">
-    <h2>पेमेंट पर्याय</h2>
-    <img src="qr-code.png" alt="QR Code">
-    <p>Google Pay, PhonePe, Paytm वर पेमेंट करा.</p>
-</section>
+    <!-- नोंदणी फॉर्म -->
+    <section id="register">
+        <h2>🔔 नोंदणी करा आणि बक्षिसे जिंका! 🔔</h2>
+        <form action="submit.php" method="post" enctype="multipart/form-data">
+            <label>पूर्ण नाव:</label>
+            <input type="text" name="name" required>
 
-<section id="register">
-    <h2>नोंदणी फॉर्म</h2>
-    <form action="https://docs.google.com/forms/d/e/Google-Form-ID/formResponse" method="POST">
-        <label>तुमचे नाव:</label>
-        <input type="text" name="entry.123456789" required>
+            <label>मोबाईल नंबर:</label>
+            <input type="tel" name="mobile" required>
 
-        <label>मोबाईल नंबर:</label>
-        <input type="tel" name="entry.987654321" required>
+            <label>पत्ता:</label>
+            <textarea name="address" required></textarea>
 
-        <label>ई-मेल:</label>
-        <input type="email" name="entry.567890123" required>
+            <label>ई-मेल:</label>
+            <input type="email" name="email">
 
-        <label>कुपन नंबर:</label>
-        <input type="text" name="entry.345678901" required>
+            <label>कुपन नंबर:</label>
+            <input type="text" name="coupon_number" required>
 
-        <label>प्रश्न (असल्यास):</label>
-        <textarea name="entry.234567890"></textarea>
+            <label>पेमेंट स्क्रीनशॉट:</label>
+            <input type="file" name="screenshot" required>
 
-        <label>पेमेंट स्क्रीनशॉट:</label>
-        <input type="file" accept="image/*" required>
+            <button type="submit">नोंदणी करा</button>
+        </form>
+    </section>
 
-        <button type="submit">Submit</button>
-    </form>
-</section>
+    <!-- पेमेंट लिंक -->
+    <section id="payment">
+        <h2>💰 पेमेंट करा</h2>
+        <p>तुम्ही ₹1001 कुपन खरेदीसाठी खालील UPI वापरू शकता:</p>
+        <a href="upi://pay?pa=amkarmakarand1@axl&pn=Makarand Amkar&mc=0000&tid=1234567890&tr=1234567890&tn=Payment for Coupon&am=1001&cu=INR" class="pay-btn">📲 PhonePe UPI</a>
+        <a href="upi://pay?pa=amkarmaku-2@oksbi&pn=Makarand Amkar&mc=0000&tid=1234567890&tr=1234567890&tn=Payment for Coupon&am=1001&cu=INR" class="pay-btn">💳 Google Pay UPI</a>
+    </section>
 
-<section id="details">
-    <h2>संपूर्ण माहिती</h2>
-    <p>📞 संपर्क: 8888546042</p>
-    <p>📍 पत्ता: दहेगाव कोराळे, राहता, अहिल्यानगर</p>
-    <p>🏆 प्रमुख बक्षिसे: Mahindra Scorpio, Swift Dzire, Splendor Bike...</p>
-</section>
+    <!-- सोशल मीडिया -->
+    <section id="social">
+        <h2>📲 आमच्याशी संपर्क साधा</h2>
+        <a href="https://whatsapp.com/channel/0029Vb4ADG9Fi8xmVJOzWD20">📩 WhatsApp</a>
+        <a href="https://www.instagram.com/shree_mahalaxmi_dhamaka2025">📸 Instagram</a>
+        <a href="https://youtube.com/@shreemahalaxmidhamaka2025">🎥 YouTube</a>
+        <a href="https://www.facebook.com/share/1D9fF7wV3h/">📘 Facebook</a>
+    </section>
 
-<section id="gallery">
-    <h2>गिफ्ट गॅलरी</h2>
-    <img src="scorpio.jpg" alt="Mahindra Scorpio">
-    <img src="ertiga.jpg" alt="Maruti Ertiga">
-    <img src="splendor.jpg" alt="Splendor Bike">
-</section>
-
-<footer>
-    <p>© 2025 श्री महालक्ष्मी धमाका. सर्व हक्क राखीव.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
----
-<!-- 🚀 सोशल मीडिया बटणे -->
-<div style="text-align: center; margin-top: 20px;">
-    <a href="https://whatsapp.com/channel/0029Vb4ADG9Fi8xmVJOzWD20" target="_blank">
-        <button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px;">WhatsApp</button>
-    </a>
-    <a href="https://www.facebook.com/share/1D9fF7wV3h/" target="_blank">
-        <button style="background-color: #1877F2; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Facebook</button>
-    </a>
-    <a href="https://www.instagram.com/shree_mahalaxmi_dhamaka2025?igsh=b3l0dHZ5YXc1Z2ph" target="_blank">
-        <button style="background-color: #E1306C; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Instagram</button>
-    </a>
-    <a href="https://t.me/तुमचा_टेलिग्राम_लिंक" target="_blank">
-        <button style="background-color: #0088CC; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Telegram</button>
-    </a>
-    <a href="https://youtube.com/@shreemahalaxmidhamaka2025?si=z_MRznCpwEMe7k8h" target="_blank">
-        <button style="background-color: #FF0000; color: white; padding: 10px 20px; border: none; border-radius: 5px;">YouTube</button>
-    </a>
-</div>
-
-<!-- 📞 कॉल बटन -->
-<div style="text-align: center; margin-top: 20px;">
-    <a href="tel:+918888546042">
-        <button style="background-color: #FF5733; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Call Now</button>
-    </a>
-</div>
-
-<!-- 💳 पेमेंट करा (स्क्रीनशॉट अपलोड) -->
-<div style="text-align: center; margin-top: 20px;">
-    <h3>💳 पेमेंट करा</h3>
-    <input type="file" accept="image/*">
-</div>
-
-<!-- 📝 नोंदणी फॉर्म -->
-<div style="text-align: center; margin-top: 20px;">
-    <h3>📝 नोंदणी करा</h3>
-    <form action="submit.php" method="POST">
-        <input type="text" name="name" placeholder="तुमचे संपूर्ण नाव" required style="padding: 10px; margin: 5px;"><br>
-        <input type="tel" name="mobile" placeholder="तुमचा मोबाईल नंबर" required style="padding: 10px; margin: 5px;"><br>
-        <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Submit</button>
-    </form>
-</div>
