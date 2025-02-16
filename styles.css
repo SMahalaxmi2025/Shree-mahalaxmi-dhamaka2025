@@ -1,0 +1,24 @@
+CSS (styles.css)
+
+
+
+body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background-color: #f9f9f9; }
+
+header { background: #ff5733; color: white; padding: 20px; }
+
+h1 { font-size: 2em; }
+
+.btn, .social-buttons a { display: inline-block; margin: 5px; padding: 10px 15px; background: yellow; color: black; text-decoration: none; font-weight: bold; border-radius: 5px; }
+
+.social-buttons a { background: lightgray; color: black; }
+
+.whatsapp { background: #25D366; } .instagram { background: #E4405F; } .facebook { background: #3b5998; } .youtube { background: #FF0000; } .telegram { background: #0088cc; }
+
+form { background: white; padding: 20px; border-radius: 10px; display: inline-block; }
+
+input, textarea { display: block; width: 100%; padding: 8px; margin: 10px 0; }
+
+button { background: green; color: white; padding: 10px; border: none; cursor: pointer; }
+
+footer { background: #222; color: white; padding: 10px; margin-top: 20px; }
+
