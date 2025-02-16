@@ -1,7 +1,18 @@
-document.getElementById("customerForm").addEventListener("submit", function(event) {
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
     event.preventDefault();
-    document.getElementById("thank-you").style.display = "block";
-    setTimeout(() => {
-        document.getElementById("thank-you").style.display = "none";
-    }, 3000);
+
+    let name = document.getElementById("name").value;
+    let mobile = document.getElementById("mobile").value;
+    let address = document.getElementById("address").value;
+
+    fetch("server.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: name=${name}&mobile=${mobile}&address=${address}
+    })
+    .then(response => response.text())
+    .then(data => alert(data))
+    .catch(error => console.error("त्रुटी:", error));
 });
