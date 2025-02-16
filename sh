@@ -1,9 +1,6 @@
-CREATE DATABASE mahalaxmi_dhamaka;
-USE mahalaxmi_dhamaka;
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
-    mobile VARCHAR(15),
-    address TEXT
-);
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <GitHub_URL>
+git push -u origin main
