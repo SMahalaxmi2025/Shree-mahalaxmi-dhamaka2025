@@ -1,90 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffcc00; /* पिवळसर पार्श्वभूमी */
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 50px; /* मोठ्या अक्षरांसाठी */
+    font-weight: bold;
+    color: #d10000; /* लाल रंग */
+    text-transform: uppercase;
     text-align: center;
-    background: #f9f9f9;
-}
-
-/* ✅ टॉप हेडर */
-header {
-    background: #ff9800;
-    color: white;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* ✅ ऑफर सेक्शन */
-.offer-section {
-    background: #ffcc80;
-    padding: 20px;
-}
-
-.offer-section button {
-    background: #d32f2f;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-/* ✅ फॉर्म स्टाइल */
-.form-container {
-    display: none;
-    background: white;
-    padding: 20px;
-    width: 80%;
-    margin: 20px auto;
-    border-radius: 5px;
-    box-shadow: 0 0 10px gray;
-}
-
-.form-container input {
-    width: 90%;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #ddd;
-}
-
-/* ✅ सोशल मीडिया बटणे */
-.social-media {
-    margin: 20px 0;
-}
-
-.social-btn {
-    display: inline-block;
-    background: #333;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* ✅ Floating WhatsApp बटण */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: green;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
 }
