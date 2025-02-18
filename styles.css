@@ -217,3 +217,26 @@ form button:hover {
   <script src="js/chatbox.js"></script>
 </body>
 </html>
+/* चॅट बॉक्स बटन */
+.chatbox-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+.chatbox-button button {
+  background-color: #f0a500;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbox-button button:hover {
+  background-color: #f08000;
+}
+
