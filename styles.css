@@ -65,3 +65,12 @@ body {
     margin: 0;
     padding: 0;
 }
+.form-section {
+    width: 90%; /* सर्व डिव्हाइसेससाठी 90% स्क्रीन व्यापेल */
+    max-width: 600px; /* डेस्कटॉपसाठी जास्तीचा Breathing Space */
+    margin: auto; /* Center-align */
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
