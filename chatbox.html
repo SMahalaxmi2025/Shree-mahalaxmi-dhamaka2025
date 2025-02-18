@@ -1,77 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat Box</title>
-  <link rel="stylesheet" href="css/chatbox.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="chatbox.css"> <!-- चॅट बॉक्स CSS -->
+    <script src="chatbox.js"></script> <!-- चॅट बॉक्स JS -->
 </head>
 <body>
-  <!-- चॅट बॉक्स बटन -->
-  <div class="chatbox-button" id="chatbox-btn">
-    <button onclick="toggleChatBox()">Chat with us</button>
-  </div>
 
-  <!-- चॅट बॉक्स पॉप-अप -->
-  <div class="chatbox-container" id="chatbox-container">
-    <div class="chatbox-header">
-      <span>Ask Your Question</span>
-      <button onclick="toggleChatBox()">X</button>
+    <!-- चॅट बॉक्स कंटेनर -->
+    <div id="chatbox-container" style="display:none;">
+        <div class="chat-header">
+            <span>Chat with us</span>
+            <button onclick="toggleChatBox()">Close</button>
+        </div>
+        <div class="chat-body">
+            <div id="chatbox-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
     </div>
-    <div class="chatbox-body">
-      <div class="chatbox-msg">
-        <p><strong>Question:</strong> What is the price of a ticket?</p>
-        <p><strong>Answer:</strong> The price of a ticket is 1001 INR.</p>
-      </div>
-      <div class="chatbox-msg">
-        <p><strong>Question:</strong> How can I book the ticket?</p>
-        <p><strong>Answer:</strong> You can book the ticket by filling out the form.</p>
-      </div>
-    </div>
-    <div class="chatbox-footer">
-      <textarea placeholder="Ask your question..." rows="3"></textarea>
-      <button>Submit</button>
-    </div>
-  </div>
 
-  <script src="js/chatbox.js"></script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat Box</title>
-  <link rel="stylesheet" href="css/chatbox.css">
-</head>
-<body>
-  <!-- चॅट बॉक्स बटन -->
-  <div class="chatbox-button" id="chatbox-btn">
-    <button onclick="toggleChatBox()">Chat with us</button>
-  </div>
+    <script>
+        function toggleChatBox() {
+            var chatbox = document.getElementById('chatbox-container');
+            chatbox.style.display = (chatbox.style.display === 'block') ? 'none' : 'block';
+        }
 
-  <!-- चॅट बॉक्स पॉप-अप -->
-  <div class="chatbox-container" id="chatbox-container">
-    <div class="chatbox-header">
-      <span>Ask Your Question</span>
-      <button onclick="toggleChatBox()">X</button>
-    </div>
-    <div class="chatbox-body">
-      <div class="chatbox-msg">
-        <p><strong>Question:</strong> What is the price of a ticket?</p>
-        <p><strong>Answer:</strong> The price of a ticket is 1001 INR.</p>
-      </div>
-      <div class="chatbox-msg">
-        <p><strong>Question:</strong> How can I book the ticket?</p>
-        <p><strong>Answer:</strong> You can book the ticket by filling out the form.</p>
-      </div>
-    </div>
-    <div class="chatbox-footer">
-      <textarea placeholder="Ask your question..." rows="3"></textarea>
-      <button>Submit</button>
-    </div>
-  </div>
+        function sendMessage() {
+            var message = document.getElementById('chat-input').value;
+            if (message) {
+                var messageContainer = document.getElementById('chatbox-messages');
+                var newMessage = document.createElement('div');
+                newMessage.textContent = message;
+                messageContainer.appendChild(newMessage);
+                document.getElementById('chat-input').value = ''; // Clear the input
+            }
+        }
+    </script>
 
-  <script src="js/chatbox.js"></script>
 </body>
 </html>
