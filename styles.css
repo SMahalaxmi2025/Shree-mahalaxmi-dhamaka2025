@@ -8,7 +8,7 @@ body {
 
 /* ✅ टॉप हेडर */
 header {
-    background: #4CAF50;
+    background: #ff9800;
     color: white;
     padding: 10px;
 }
@@ -29,18 +29,19 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* ✅ CTA बटणे */
-.cta-section button {
-    background: #008CBA;
+/* ✅ ऑफर सेक्शन */
+.offer-section {
+    background: #ffcc80;
+    padding: 20px;
+}
+
+.offer-section button {
+    background: #d32f2f;
     color: white;
     padding: 10px 20px;
     margin: 10px;
     border: none;
     cursor: pointer;
-}
-
-.cta-section button:hover {
-    background: #005F73;
 }
 
 /* ✅ फॉर्म स्टाइल */
@@ -54,7 +55,7 @@ nav ul li a {
     box-shadow: 0 0 10px gray;
 }
 
-.form-container input, textarea {
+.form-container input {
     width: 90%;
     padding: 10px;
     margin: 5px;
@@ -74,13 +75,6 @@ nav ul li a {
     margin: 5px;
     text-decoration: none;
     border-radius: 5px;
-}
-
-/* ✅ Footer */
-footer {
-    background: #222;
-    color: white;
-    padding: 20px;
 }
 
 /* ✅ Floating WhatsApp बटण */
