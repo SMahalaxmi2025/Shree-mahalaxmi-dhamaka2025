@@ -8,7 +8,7 @@ body {
 
 /* ✅ टॉप हेडर */
 header {
-    background: #ff9800;
+    background: #4CAF50;
     color: white;
     padding: 10px;
 }
@@ -29,19 +29,18 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* ✅ ऑफर सेक्शन */
-.offer-section {
-    background: #ffcc80;
-    padding: 20px;
-}
-
-.offer-section button {
-    background: #d32f2f;
+/* ✅ CTA बटणे */
+.cta-section button {
+    background: #008CBA;
     color: white;
     padding: 10px 20px;
     margin: 10px;
     border: none;
     cursor: pointer;
+}
+
+.cta-section button:hover {
+    background: #005F73;
 }
 
 /* ✅ फॉर्म स्टाइल */
@@ -55,7 +54,7 @@ nav ul li a {
     box-shadow: 0 0 10px gray;
 }
 
-.form-container input {
+.form-container input, textarea {
     width: 90%;
     padding: 10px;
     margin: 5px;
