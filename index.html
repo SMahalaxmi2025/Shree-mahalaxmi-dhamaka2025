@@ -116,4 +116,46 @@
   <link rel="stylesheet" href="css/chatbox.css">
 </head>
 <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox Integration</title>
+    <link rel="stylesheet" href="chatbox/chatbox.css"> <!-- चॅट बॉक्स CSS -->
+    <script src="chatbox/chatbox.js"></script> <!-- चॅट बॉक्स JS -->
+    <style>
+        /* मुख्य पृष्ठावर बटन कसे दिसावे ते स्टाईल करा */
+        .chatbox-btn-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+        .chatbox-btn {
+            background-color: #25d366; /* व्हाट्सअप कलर */
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 30px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
 
+    <!-- चॅट बॉक्स बटन -->
+    <div class="chatbox-btn-container">
+        <button class="chatbox-btn" onclick="window.location.href='chatbox/chatbox.html';">
+            💬 <!-- चॅट आयकॉन -->
+        </button>
+    </div>
+
+    <!-- मुख्य पृष्ठ सामग्री इथे असू शकते -->
+    <h1>Welcome to My Website</h1>
+    <p>This is your main content.</p>
+
+</body>
+</html>
