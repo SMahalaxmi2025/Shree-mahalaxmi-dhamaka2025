@@ -81,28 +81,29 @@
 </body>
 </html>
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>बुकिंग पेज</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function showForm(formType) {
-            if (formType === 'preBook') {
-                window.location.href = "prebook.html"; // प्रीबुकिंग पेज
-            } else if (formType === 'ticketBook') {
-                window.location.href = "ticketbook.html"; // तिकीट बुकिंग पेज
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre Book / Ticket Book</title>
+  
+  <!-- CSS फाईल लिंक करा -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+  <div class="container">
+    <!-- Pre Book बटन -->
     <div class="button-container">
-        <button onclick="showForm('preBook')">प्री बुक - 1 रुपया</button>
-        <button onclick="showForm('ticketBook')">तिकीट बुक - 1001 रुपये</button>
+      <button class="booking-btn" onclick="window.location.href='prebook.html'">Pre Book</button>
     </div>
 
+    <!-- Ticket Book बटन -->
+    <div class="button-container">
+      <button class="booking-btn" onclick="window.location.href='ticketbook.html'">Ticket Book</button>
+    </div>
+  </div>
+
+  <!-- JavaScript (optional) -->
+  <script src="js/script.js"></script>
 </body>
 </html>
