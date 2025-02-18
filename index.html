@@ -3,86 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>श्री महालक्ष्मी धमाका 2025</title>
-    <link rel="stylesheet" href="style.css">
+    <title>श्री महालक्ष्मी धमाका</title>
+    <link rel="stylesheet" href="styles.css"> <!-- मुख्य स्टाईल शीट -->
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header with the name -->
     <header>
-        <div class="logo">
-            <h1>श्री महालक्ष्मी धमाका 2025</h1>
-        </div>
+        <h1>श्री महालक्ष्मी धमाका 2025</h1>
     </header>
 
-    <!-- Social Media Links -->
-    <div class="social-links">
-        <a href="https://www.instagram.com/shree_mahalaxmi_dhamaka2025" target="_blank">Instagram</a>
-        <a href="https://whatsapp.com/channel/0029Vb4ADG9Fi8xmVJOzWD20" target="_blank">WhatsApp</a>
-        <a href="https://youtube.com/@shreemahalaxmidhamaka2025" target="_blank">YouTube</a>
-        <a href="https://www.facebook.com/share/1D9fF7wV3h/" target="_blank">Facebook</a>
+    <!-- Pre-booking & Ticket booking buttons -->
+    <div class="buttons-container">
+        <button class="pre-book-button" onclick="location.href='pre-book.html'">प्री-बुकिंग</button>
+        <button class="ticket-book-button" onclick="location.href='ticket-book.html'">तिकीट बुकिंग</button>
     </div>
 
-    <!-- Pre-booking Button -->
-    <div class="booking-buttons">
-        <button class="book-button" onclick="openPreBookingForm()">प्री बुकिंग</button>
-        <button class="book-button" onclick="openTicketBookingForm()">तिकीट बुकिंग</button>
+    <!-- Chatbox button -->
+    <div class="chatbox-btn">
+        <button onclick="openChatBox()">चॅट बॉक्स सुरू करा</button>
     </div>
 
-    <!-- Pre-Booking Form (hidden initially) -->
-    <div id="preBookingForm" class="booking-form">
-        <h2>प्री बुकिंग</h2>
-        <form action="#" method="POST">
-            <label for="name">कस्टमरचे नाव:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="phone">मोबाइल नंबर:</label>
-            <input type="text" id="phone" name="phone" required>
-            
-            <label for="address">पत्ता:</label>
-            <input type="text" id="address" name="address" required>
-            
-            <label for="email">ई-मेल:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="paymentScreenshot">पेमेंटचा स्क्रीनशॉट:</label>
-            <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required>
-            
-            <button type="submit">सबमिट</button>
-        </form>
+    <!-- Chatbox Section -->
+    <div id="chatbox" class="chatbox">
+        <div class="chat-header">
+            <span>चॅट सहाय्य</span>
+            <button onclick="closeChatBox()">X</button>
+        </div>
+        <div class="chat-content">
+            <div class="chat-message">
+                <span>नमस्कार! आपण कसे सहाय्य करू शकतो?</span>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="आपला संदेश लिहा..." />
+            <button onclick="sendMessage()">पाठवा</button>
+        </div>
     </div>
 
-    <!-- Ticket Booking Form (hidden initially) -->
-    <div id="ticketBookingForm" class="booking-form">
-        <h2>तिकीट बुकिंग</h2>
-        <form action="#" method="POST">
-            <label for="name">कस्टमरचे नाव:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="phone">मोबाइल नंबर:</label>
-            <input type="text" id="phone" name="phone" required>
-            
-            <label for="address">पत्ता:</label>
-            <input type="text" id="address" name="address" required>
-            
-            <label for="email">ई-मेल:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="paymentScreenshot">पेमेंटचा स्क्रीनशॉट:</label>
-            <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required>
-            
-            <button type="submit">सबमिट</button>
-        </form>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>नाव: [तुमचं नाव]</p>
-        <p>फोन नंबर: 8888546042</p>
-        <p>ई-मेल: makarandamkar1189@gmail.com</p>
-        <p>पत्ता: दहेगाव कोऱ्हाळे तालुका राहता जिल्हा अहमदनगर</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="chatbox.js"></script> <!-- चॅट बॉक्सचा JS -->
 </body>
 </html>
