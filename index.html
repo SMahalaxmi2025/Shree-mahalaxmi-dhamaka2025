@@ -107,3 +107,42 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Box</title>
+  <link rel="stylesheet" href="css/chatbox.css">
+</head>
+<body>
+  <!-- चॅट बटन -->
+  <div class="chatbox-button" id="chatbox-btn">
+    <button onclick="toggleChatBox()">Chat with us</button>
+  </div>
+
+  <!-- चॅट बॉक्स -->
+  <div class="chatbox-container" id="chatbox-container">
+    <div class="chatbox-header">
+      <span>Ask Your Question</span>
+      <button onclick="toggleChatBox()">X</button>
+    </div>
+    <div class="chatbox-body">
+      <div class="chatbox-msg">
+        <p><strong>Question:</strong> What is the price of a ticket?</p>
+        <p><strong>Answer:</strong> The price of a ticket is 1001 INR.</p>
+      </div>
+      <div class="chatbox-msg">
+        <p><strong>Question:</strong> How can I book the ticket?</p>
+        <p><strong>Answer:</strong> You can book the ticket by filling out the form.</p>
+      </div>
+    </div>
+    <div class="chatbox-footer">
+      <textarea placeholder="Ask your question..." rows="3"></textarea>
+      <button>Submit</button>
+    </div>
+  </div>
+
+  <script src="js/chatbox.js"></script>
+</body>
+</html>
