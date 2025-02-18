@@ -58,12 +58,7 @@ footer {
     color: white;
     padding: 10px;
 }
-/* सर्व डिव्हाइसेससाठी एकसारखे UI */
-body {
-    background-color: white; /* एकसारखा रंग */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+
 }
 .form-section {
     width: 90%; /* सर्व डिव्हाइसेससाठी 90% स्क्रीन व्यापेल */
