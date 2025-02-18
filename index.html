@@ -19,7 +19,30 @@
         <a href="https://www.instagram.com/shree_mahalaxmi_dhamaka2025?igsh=b3l0dHZ5YXc1Z2ph" target="_blank"><img src="instagram.png" alt="Instagram"></a>
         <a href="https://www.facebook.com/share/1E3A6BaB7q/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
     </section>
+<!-- माझा पत्ता बटण -->
+<button onclick="openAddress()">📍 माझा पत्ता</button>
 
+<!-- WhatsApp वर पत्ता पाठवण्यासाठी बटण -->
+<button onclick="sendAddressOnWhatsApp()">📍 WhatsApp वर पत्ता पाठवा</button>
+
+<script>
+function openAddress() {
+    let address = "📍 श्री महालक्ष्मी धमाका,\nदहेगाव कोराळे, तालुका राहता,\nजिल्हा अहिल्यानगर, पिन कोड - 423107";
+    let googleMapsUrl = "https://www.google.com/maps?q=19.5678,74.4765"; // **इथे तुमचे नक्की लोकेशन टाका**
+
+    let confirmOpen = confirm("माझा पत्ता:\n" + address + "\n\nGoogle Maps मध्ये उघडायचे आहे का?");
+    if (confirmOpen) {
+        window.open(googleMapsUrl, "_blank"); // नवीन टॅबमध्ये Google Maps उघडेल
+    }
+}
+
+function sendAddressOnWhatsApp() {
+    let address = "📍 *माझा पत्ता:*\nश्री महालक्ष्मी धमाका,\nदहेगाव कोराळे, तालुका राहता,\nजिल्हा अहिल्यानगर, पिन कोड - 423107\n\n🔗 Google Maps: https://www.google.com/maps?q=19.5678,74.4765";
+    let whatsappUrl = `https://wa.me/?text=${encodeURIComponent(address)}`;
+
+    window.open(whatsappUrl, "_blank"); // WhatsApp उघडेल
+}
+</script> 
     <section class="buttons">
         <a href="prebook.html" class="btn">PRE BOOK</a>
         <a href="tiktbook.html" class="btn">TIKT BOOK</a>
